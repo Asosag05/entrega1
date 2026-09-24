@@ -1,0 +1,53 @@
+Entrega 1 DFV 
+
+Alejandro Sosa Gilsanz 
+
+ESCENAS: 
+El juego dispone de una única escena, la escena inicial donde el 
+contador de puntos está en 0, la nave esta en el punto (0,0,0) y el primer 
+meteorito aparece. En caso de que el jugador pierda o reinicie la partida, se 
+empezará la escena nuevamente. 
+
+
+Assets y GameObjects: 
+El juego dispone de los game objects dados por el profesor, la nave, los 
+meteoritos, las balas y el fondo, a parte se ha añadido el contador y los 
+elementos del menú de pausa. 
+
+
+Mecánicas: 
+Las mecánicas implementadas son las básicas: 
+La nave puede moverse para adelante y para atrás y puede cambiar 
+dirección, también puede disparar. Disparará en función de a donde este 
+apuntando. 
+Los meteoritos apuntan en la dirección de la nave y avanzan hacia ella. Se 
+van generando a medida que pasa el tiempo y el juego se puede ir haciendo 
+más dificil pues está programado para que cada x tiempo se reduzca la 
+espera entre “Spawns” de meteoritos 
+El menú de pause tiene dos botones, uno para continuar jugando y el otro 
+para reiniciar el contador y la partida. 
+
+
+Scripts: 
+BulletScript: Contiene el funcionamiento del disparo de la nave y su manejo 
+de colisiones. 
+EnemyMovement: Contiene el programa que define el movimiento de los 
+meteoritos. 
+EnemySpawner: Contiene el programa que define el spawneo de los 
+meteoritos. 
+Meteorite: Contiene el funcionamiento de los meteoritos y su división, también 
+maneja sus colisiones. 
+PauseManager: Controla el menú de pausa. 
+PleyerMovement: Contiene el programa que define el movimiento del jugador. 
+ScoreScript: Contiene el programa que hace funcionar la puntuación del 
+juego. 
+ShipShooting: Contiene el programa que define el disparo de la nave. 
+
+
+Interacción: 
+W - Desplazamiento hacia delante 
+S - Desplazamiento hacia detras 
+A - Cambio de orientación (Izquierda) 
+D - Cambio de orientación (Derecha= 
+Cntrl / Click Izquierdo - Disparo 
+Esc - Pausa
